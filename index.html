@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="media.css">
+
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-title">
+      <div class="languages">
+        <img src="assets/images/icon-accessibility.svg" alt="icon">
+      </div>
+      <span class="accessibility">Accessibility</span>
+    </div>
+
+
+    <div class="switchmode">
+      <img src="assets/images/icon-moon-dark.svg" alt="icon">
+      <label class="switch">
+        <input id="toggle-switch" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <img src="assets/images/icon-sun-dark.svg" alt="icon">
+    </div>
+
+  </header>
+
+  <main class="parent">
+    <div class="child-1">
+      <div class="titles">
+        <span>Welcome to the</span>
+        <span>Frontend Quiz!</span>
+      </div>
+      <span id="thirdchild">Pick a subject to get started.</span>
+    </div>
+    <div class="hidden">
+      <div class="flexbox">
+        <div class="flexchild">
+          <span style="color: grey; font-size: 17px;">Question <span class="count">1</span> of 10</span>
+          <h1 class="question"></h1>
+        </div>
+        <div class="progress"><label for="file"></label>
+          <progress id="file" value="1" max="10"> 10% </progress>
+        </div>
+      </div>
+    </div>
+    <div class="finish">
+      <div class="over">
+        <h1>Quiz completed
+          You scored...</h1>
+        <button class="restart">PLAY AGAIN</button>
+      </div>
+
+    </div>
+
+
+
+    <div class="child-2">
+      <div class="js-el jsel1">
+        <div class="jschild  jschild0"> <img src="assets/images/icon-html.svg"> </div>
+        <h1 class="contents">HTML</h1>
+      </div>
+      <div class="js-el jsel2">
+        <div class="jschild  jschild1"> <img src="assets/images/icon-css.svg"> </div>
+        <h1 class="contents">CSS</h1>
+      </div>
+      <div class="js-el jsel3">
+        <div class="jschild  jschild2"> <img src="assets/images/icon-js.svg"> </div>
+        <h1 class="contents">JAVASCRIPT</h1>
+      </div>
+      <div class="js-el jsel4">
+        <div class="jschild  jschild3"> <img src="assets/images/icon-accessibility.svg"> </div>
+        <h1 class="contents">ACCESSIBILITY</h1>
+      </div>
+      <button class="js-el jsel5" style="font-size: 40px;">next question</button>
+      <button class="js-el jsel6" style="font-size: 40px;">Submit Answer </button>
+    </div>
+    <div class="correct">
+      <h2>SCORE</h2>
+      <h1 class="finalscore"></h1>
+    </div>
+  </main>
+</body>
+
+</html>

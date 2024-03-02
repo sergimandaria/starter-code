@@ -1,0 +1,273 @@
+:root {
+    --bg-bg-cl:#F4F6FA;
+    --bg-tx-cl: #313E51;
+    --bg-img-url:url(assets/images/pattern-background-desktop-light.svg);
+    --bg-br-cl:#ffffff;
+    --el-hv-bt:#313E51;
+}
+
+[data-theme="dark"] {
+    --bg-bg-cl: #313E51;
+    --bg-tx-cl: #F4F6FA;
+    --bg-img-url: url(assets/images/pattern-background-desktop-dark.svg);
+    --bg-br-cl:#1f2835;
+    --el-hv-bt: #F4F6FA;
+}
+
+body {
+    background-color: var(--bg-bg-cl);
+    color: var(--bg-tx-cl);
+    background-image: var(--bg-img-url)
+}
+@font-face {
+font-family: Rubik-Regular;
+src: url(assets/fonts/static/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik-italic;
+    src: url(assets/fonts/static/Rubik-Regular.ttf);
+}
+
+
+
+header {
+    display: flex;
+    gap: 4px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* switch */
+.switchmode {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+.accessibility {
+  font-size: 35px;
+}
+
+.header-title {
+ display: flex;
+}
+.child-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 40px;
+}
+.parent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+#thirdchild {
+ font-size: 20px;
+}
+
+.jschild {
+    width: 60px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.jschild:hover{
+  background-color: var(--el-hv-bt);
+}
+.child-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+
+.js-el {
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ width: 520px;
+ height: 70px;
+ background-color:var(--bg-br-cl);
+ cursor: pointer;
+ font-family: Rubik-Regular;
+ border-radius: 30px;
+ padding-left: 15px;
+ 
+}
+
+.titles {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ font-size: 70px;
+ max-width: 700x;
+}
+
+.jschild0{
+background-color: rgb(163, 109, 81);
+}
+
+.jschild1 {
+    background-color: rgb(99, 149, 85);
+}
+
+.jschild2 {
+    background-color: rgb(211, 211, 222);
+}
+
+.jschild3 {
+    background-color: rgb(222, 206, 187);
+}
+
+.hidden {
+    display: none;
+}
+
+.flexbox {
+    display: flex;
+   flex-direction: column;
+   gap: 140px;
+}
+
+.flexchild {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 80px;
+}
+.jsel5{
+display: none;
+text-align: center;
+background-color: #a729f5;
+}
+.jsel6{
+ display: none;
+text-align: center;
+background-color: #a729f5;
+}
+.question {
+    font-size: 32px;
+    max-width: 350px;
+    font-family: Rubik-italic;
+}
+
+.progress {
+    font-size: 50px;
+}
+#file {
+    height: 20px;
+}
+
+.finish {
+    display: none;
+}
+
+.correct {
+    display: none;
+}
+
+
+.correct {
+    font-size: 80px;
+}
+.over {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.restart {
+    font-size: 30px;
+    border-radius: 20px;
+    width: 250px;
+    height: 90px;
+    cursor: pointer;
+    background-color: #83067f;
+}
+
+   
+
+.contents{
+   max-width: 600px;
+    font-size:19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

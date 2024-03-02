@@ -1,0 +1,9 @@
+@media all and (max-width: 970px) {
+    .parent {
+        display: flex;
+        flex-direction:column ;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}
